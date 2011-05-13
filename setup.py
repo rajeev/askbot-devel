@@ -9,7 +9,7 @@ import sys
 install_requires = [
     'django>=1.1.2',
     'Jinja2',
-    'Coffin>=0.3',
+    'Coffin>=0.3.3',
     'South>=0.7.1',
     'oauth2',
     'recaptcha-client',
@@ -31,7 +31,8 @@ install_requires = [
 
 WIN_PLATFORMS = ('win32', 'cygwin',)
 if sys.platform not in WIN_PLATFORMS:
-    install_requires.append('mysql-python')
+    pass
+    #install_requires.append('mysql-python')
 
 import askbot
 
